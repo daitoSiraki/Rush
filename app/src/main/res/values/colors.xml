@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="green">#00FF00</color>
+    <color name="orenge">#FFA500</color>
+    <color name="blue">#0000FF</color>
+    <color name="mizuiro">#ADD8E6</color>
+
+</resources>

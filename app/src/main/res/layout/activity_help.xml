@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sabanna">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="Back arrow" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButton1Click"
+        android:background="@drawable/buttonbackground"
+        android:text="足を速くするために"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/sheet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="１ 足の歩幅を変える\n\n２ あしの回転数をあげる"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/title2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButton2Click"
+        android:text="モード説明"
+        android:background="@drawable/buttonbackground"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/sheet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sheet_text"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButton3Click"
+        android:text="速度計算"
+        android:textSize="24sp"
+        android:background="@drawable/buttonbackground"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/sheet3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="時速から秒速の計算の仕方 \n50m走 : 1km=1000m 1時間=3600秒 結果の値×1000÷3600=秒速\n速度=50÷秒速\n\n100m走 : 結果の値×1000÷3600=秒速   速度=100÷秒速"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

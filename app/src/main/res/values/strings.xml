@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">rush</string>
+    <string name="sheet_text">ノーマルモード\nシンプルな計測モード\nスーパーモード\nカウント回数を変えた計測モード</string>
+</resources>
+
