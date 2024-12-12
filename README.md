@@ -13,10 +13,6 @@
 
 
 
-操作説明動画３分のYouTubeへのURL：  https://youtu.be/Bu1uou80V-o
-
-発表動画５分のYouTubeへのURL    ：  https://youtu.be/UnSwWRuVZkY
-
 
 
 
